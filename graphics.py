@@ -32,9 +32,6 @@ def test1():
     id = canvas.create_line(200, 50, 500, 430, width=3, fill="DarkOrange")
     print("Line 1 id:", id)
 
-    id = canvas.create_line(200, 50, 500, 430, width=3, fill="DarkOrange")
-    print("Line 1 id:", id)
-
     id = canvas.create_line(200, 60, 500, 440, width=3, fill="DarkOrange", dash=(2,3))
     print("Line 2 id:", id)
 
