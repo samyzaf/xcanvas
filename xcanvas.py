@@ -1,6 +1,6 @@
-# An extended tkinter Canvas Window with zoom scale and extended bindings
+# An extended Python/tkinter Canvas Window with zoom scale and extended bindings
 # on which we can draw points, lines, rectangles, etc.
-# See the tkinter module, Canvas class, for more details.
+# See the Python tkinter module, Canvas class, for more usage details
 
 import tkinter as tk
 
