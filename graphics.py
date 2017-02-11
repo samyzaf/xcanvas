@@ -37,6 +37,14 @@ def test1():
 
     print("Canvas Scroll Region:", canvas["scrollregion"])
 
+    id = canvas.create_oval(100, 420, 300, 620, width=3, outline="darkgreen", fill="cornsilk")
+    print("Circle id:", id)
+    canvas.create_text(200, 520, text="Circle", fill="maroon", font=("Consolas", 15, "bold"))
+
+    id = canvas.create_oval(450, 120, 650, 240, width=5, outline="goldenrod4", fill="tan")
+    print("Ellipse id:", id)
+    canvas.create_text(550, 180, text="Ellipse", fill="white", font=("Copperplate Gothic Bold", 21, "bold"))
+
     show_canvas()
 
 
