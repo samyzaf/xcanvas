@@ -170,7 +170,7 @@ class XCanvas(tk.Canvas):
 
 #--------------------------------------------------------------------------------------
 
-def test1():
+def xcanvas_test():
     # This is where we create the canvas
     rootwin1 = tk.Tk()
     c1 = XCanvas(rootwin1, width=1000, height=800, bg="white")
@@ -192,7 +192,7 @@ def test1():
     tk.mainloop()
 
 if __name__ == "__main__":
-    test1()
+    xcanvas_test()
 
 
 
