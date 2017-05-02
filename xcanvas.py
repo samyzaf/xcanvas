@@ -56,21 +56,21 @@ class XCanvas(tk.Canvas):
         self.sbarH.pack(side = tk.BOTTOM, fill = tk.X)
     
     def bindings(self):
-        self.rootwin.bind("<Control-MouseWheel>", self.onCtrlMouseWheel)
-        self.rootwin.bind("<Alt-MouseWheel>", self.onAltMouseWheel)
-        self.rootwin.bind("<MouseWheel>", self.onMouseWheel)
-        self.rootwin.bind("<Shift-MouseWheel>", self.onShiftMouseWheel)
-        self.rootwin.bind("f", self.fit_canvas)
-        self.rootwin.bind("<Home>", self.fit_canvas)
-        self.rootwin.bind("<Up>", self.onArrowUp)
-        self.rootwin.bind("<Down>", self.onArrowDown)
-        self.rootwin.bind("<Left>", self.onArrowLeft)
-        self.rootwin.bind("<Right>", self.onArrowRight)
-        self.rootwin.bind("<Prior>", self.onArrowUp)
-        self.rootwin.bind("<Next>", self.onArrowDown)
-        self.rootwin.bind("<Shift-Prior>", self.onPrior)
-        self.rootwin.bind("<Shift-Next>", self.onNext)
-        #self.rootwin.bind("all", self.eventEcho)
+        self.bind("<Control-MouseWheel>", self.onCtrlMouseWheel)
+        self.bind("<Alt-MouseWheel>", self.onAltMouseWheel)
+        self.bind("<MouseWheel>", self.onMouseWheel)
+        self.bind("<Shift-MouseWheel>", self.onShiftMouseWheel)
+        self.bind("f", self.fit_canvas)
+        self.bind("<Home>", self.fit_canvas)
+        self.bind("<Up>", self.onArrowUp)
+        self.bind("<Down>", self.onArrowDown)
+        self.bind("<Left>", self.onArrowLeft)
+        self.bind("<Right>", self.onArrowRight)
+        self.bind("<Prior>", self.onArrowUp)
+        self.bind("<Next>", self.onArrowDown)
+        self.bind("<Shift-Prior>", self.onPrior)
+        self.bind("<Shift-Next>", self.onNext)
+        #self.bind("all", self.eventEcho)
 
     def show(self, force=False):
         if force or not self.winfo_ismapped():
@@ -193,6 +193,4 @@ def xcanvas_test():
 
 if __name__ == "__main__":
     xcanvas_test()
-
-
 
